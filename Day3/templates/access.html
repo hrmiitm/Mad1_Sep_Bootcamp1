@@ -1,0 +1,31 @@
+{% extends './layouts/bootstrap.html' %}
+
+
+{% block title %}
+Login
+{% endblock %}
+
+{% block body %}
+
+   
+    {% include './BasicComponents/navbar.html'   %}
+    {% include './BasicComponents/flash.html'   %}
+
+   <div class="container text-center">
+        <div class="row">
+
+            <div class="col">
+                <h1>Login</h1>
+                {% include './BasicComponents/login_form.html'   %}
+            </div>
+
+            <div class="col">
+                <h1>Registration</h1>
+                {% include './BasicComponents/registration_form.html'   %}
+                
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}
