@@ -1,0 +1,19 @@
+{% extends './layouts/bootstrap.html' %}
+
+
+{% block title %}
+    Home
+{% endblock %}
+
+
+{% block body %}
+
+    
+    {% include './BasicComponents/navbar.html'   %}
+    {% include './BasicComponents/flash.html'   %}
+    <h1>Home Page</h1>
+
+    <h3>Name: {{user.name}}</h3>
+    <h3>Email: {{user.email}}</h3>
+
+{% endblock %}
